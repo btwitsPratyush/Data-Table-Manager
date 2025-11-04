@@ -2,10 +2,11 @@ import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setSearchQuery } from '@/store/tableSlice';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Search, Settings, Upload, Download } from 'lucide-react';
+import { Search, Settings, Upload } from 'lucide-react';
 import { ColumnManager } from './ColumnManager';
 import { CSVImport } from './CSVImport';
 import { CSVExport } from './CSVExport';
+import { ThemeToggle } from './ThemeToggle';
 import { useState } from 'react';
 
 export const TableControls = () => {
@@ -29,6 +30,8 @@ export const TableControls = () => {
         </div>
         
         <div className="flex gap-2">
+          <ThemeToggle />
+          
           <Button
             variant="outline"
             onClick={() => setImportDialogOpen(true)}

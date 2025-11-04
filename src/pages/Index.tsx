@@ -11,66 +11,66 @@ const Index = () => {
         <div className="flex-1 py-8">
           <div className="container mx-auto px-4">
             {/* Header */}
-            <div className="mb-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="rounded-lg bg-primary p-3 shadow-lg">
-                  <Database className="h-6 w-6 text-primary-foreground" />
+            <div className="mb-10">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="rounded-2xl bg-gradient-to-br from-primary to-primary/80 p-4 shadow-[var(--shadow-primary)]">
+                  <Database className="h-8 w-8 text-primary-foreground" />
                 </div>
                 <div>
-                  <h1 className="text-4xl font-bold tracking-tight text-foreground">
+                  <h1 className="text-5xl font-extrabold tracking-tight bg-gradient-to-r from-primary via-primary to-purple-600 bg-clip-text text-transparent">
                     Dynamic Data Table Manager
                   </h1>
-                  <p className="text-lg text-muted-foreground mt-1">
-                    A powerful, feature-rich data management solution
+                  <p className="text-xl text-muted-foreground mt-2 font-medium">
+                    A powerful, feature-rich data management solution built with modern web technologies
                   </p>
                 </div>
               </div>
               
               {/* Feature highlights */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                <div className="rounded-lg border border-border bg-card p-4 hover:shadow-md transition-shadow">
-                  <div className="flex items-start gap-3">
-                    <div className="rounded-md bg-primary/10 p-2">
-                      <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                <div className="group rounded-xl border border-border bg-gradient-to-br from-card to-accent/20 p-6 hover:shadow-[var(--shadow-lg)] hover:border-primary/50 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="rounded-xl bg-gradient-to-br from-primary to-primary/80 p-3 shadow-[var(--shadow-primary)] group-hover:scale-110 transition-transform duration-300">
+                      <svg className="h-6 w-6 text-primary-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground">CSV Import/Export</h3>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        Seamlessly import and export data with automatic column detection
+                      <h3 className="font-bold text-lg text-foreground mb-1">CSV Import/Export</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        Seamlessly import and export data with automatic column detection and validation
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="rounded-lg border border-border bg-card p-4 hover:shadow-md transition-shadow">
-                  <div className="flex items-start gap-3">
-                    <div className="rounded-md bg-primary/10 p-2">
-                      <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="group rounded-xl border border-border bg-gradient-to-br from-card to-accent/20 p-6 hover:shadow-[var(--shadow-lg)] hover:border-primary/50 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="rounded-xl bg-gradient-to-br from-primary to-primary/80 p-3 shadow-[var(--shadow-primary)] group-hover:scale-110 transition-transform duration-300">
+                      <svg className="h-6 w-6 text-primary-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground">Inline Editing</h3>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        Edit any cell directly with a simple double-click for quick updates
+                      <h3 className="font-bold text-lg text-foreground mb-1">Inline Editing</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        Edit any cell directly with a simple double-click for instant data updates
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="rounded-lg border border-border bg-card p-4 hover:shadow-md transition-shadow">
-                  <div className="flex items-start gap-3">
-                    <div className="rounded-md bg-primary/10 p-2">
-                      <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="group rounded-xl border border-border bg-gradient-to-br from-card to-accent/20 p-6 hover:shadow-[var(--shadow-lg)] hover:border-primary/50 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="rounded-xl bg-gradient-to-br from-primary to-primary/80 p-3 shadow-[var(--shadow-primary)] group-hover:scale-110 transition-transform duration-300">
+                      <svg className="h-6 w-6 text-primary-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground">Dynamic Columns</h3>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        Add, remove, and toggle column visibility to fit your needs
+                      <h3 className="font-bold text-lg text-foreground mb-1">Dynamic Columns</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        Add, remove, and toggle column visibility dynamically to fit your workflow
                       </p>
                     </div>
                   </div>
@@ -85,51 +85,53 @@ const Index = () => {
             <DataTable />
 
             {/* Info Cards */}
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="rounded-lg border border-border bg-card p-5">
-                <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                  <span className="text-xl">💡</span> Quick Tips
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="rounded-xl border border-border bg-gradient-to-br from-card to-accent/20 p-6 shadow-[var(--shadow-md)]">
+                <h3 className="font-bold text-xl text-foreground mb-4 flex items-center gap-3">
+                  <span className="text-3xl">💡</span> 
+                  <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">Quick Tips</span>
                 </h3>
-                <ul className="text-sm text-muted-foreground space-y-2">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-0.5">•</span>
-                    <span>Double-click any cell to edit data inline</span>
+                <ul className="text-sm text-muted-foreground space-y-3">
+                  <li className="flex items-start gap-3 group">
+                    <span className="text-primary mt-0.5 text-lg group-hover:scale-125 transition-transform">•</span>
+                    <span className="group-hover:text-foreground transition-colors">Double-click any cell to edit data inline with instant updates</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-0.5">•</span>
-                    <span>Click column headers to sort ascending or descending</span>
+                  <li className="flex items-start gap-3 group">
+                    <span className="text-primary mt-0.5 text-lg group-hover:scale-125 transition-transform">•</span>
+                    <span className="group-hover:text-foreground transition-colors">Click column headers to sort data ascending or descending</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-0.5">•</span>
-                    <span>Use the global search to filter across all columns</span>
+                  <li className="flex items-start gap-3 group">
+                    <span className="text-primary mt-0.5 text-lg group-hover:scale-125 transition-transform">•</span>
+                    <span className="group-hover:text-foreground transition-colors">Use the global search to filter data across all columns in real-time</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-0.5">•</span>
-                    <span>Manage columns to show/hide fields or add custom ones</span>
+                  <li className="flex items-start gap-3 group">
+                    <span className="text-primary mt-0.5 text-lg group-hover:scale-125 transition-transform">•</span>
+                    <span className="group-hover:text-foreground transition-colors">Manage columns to show/hide fields or add custom ones dynamically</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="rounded-lg border border-border bg-card p-5">
-                <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                  <span className="text-xl">🚀</span> Features
+              <div className="rounded-xl border border-border bg-gradient-to-br from-card to-accent/20 p-6 shadow-[var(--shadow-md)]">
+                <h3 className="font-bold text-xl text-foreground mb-4 flex items-center gap-3">
+                  <span className="text-3xl">🚀</span> 
+                  <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">Features</span>
                 </h3>
-                <ul className="text-sm text-muted-foreground space-y-2">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-0.5">•</span>
-                    <span>Built with React 18, TypeScript & Redux Toolkit</span>
+                <ul className="text-sm text-muted-foreground space-y-3">
+                  <li className="flex items-start gap-3 group">
+                    <span className="text-primary mt-0.5 text-lg group-hover:scale-125 transition-transform">•</span>
+                    <span className="group-hover:text-foreground transition-colors">Built with React 18, TypeScript & Redux Toolkit for robust state management</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-0.5">•</span>
-                    <span>Responsive design that works on all devices</span>
+                  <li className="flex items-start gap-3 group">
+                    <span className="text-primary mt-0.5 text-lg group-hover:scale-125 transition-transform">•</span>
+                    <span className="group-hover:text-foreground transition-colors">Fully responsive design that works seamlessly on all devices</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-0.5">•</span>
-                    <span>CSV import with automatic column detection</span>
+                  <li className="flex items-start gap-3 group">
+                    <span className="text-primary mt-0.5 text-lg group-hover:scale-125 transition-transform">•</span>
+                    <span className="group-hover:text-foreground transition-colors">CSV import with automatic column detection and validation</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-0.5">•</span>
-                    <span>Export visible data to CSV with one click</span>
+                  <li className="flex items-start gap-3 group">
+                    <span className="text-primary mt-0.5 text-lg group-hover:scale-125 transition-transform">•</span>
+                    <span className="group-hover:text-foreground transition-colors">Export visible data to CSV with one click for easy sharing</span>
                   </li>
                 </ul>
               </div>
@@ -138,66 +140,98 @@ const Index = () => {
         </div>
 
         {/* Footer */}
-        <footer className="mt-12 border-t border-border bg-card">
-          <div className="container mx-auto px-4 py-8">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <footer className="mt-12 border-t border-border bg-gradient-to-br from-card to-accent/30">
+          <div className="container mx-auto px-4 py-12">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
               {/* About */}
               <div className="md:col-span-2">
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="rounded-md bg-primary p-2">
-                    <Database className="h-5 w-5 text-primary-foreground" />
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="rounded-xl bg-gradient-to-br from-primary to-primary/80 p-3 shadow-[var(--shadow-primary)]">
+                    <Database className="h-6 w-6 text-primary-foreground" />
                   </div>
-                  <h3 className="text-lg font-bold text-foreground">Data Table Manager</h3>
+                  <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+                    Data Table Manager
+                  </h3>
                 </div>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                   A modern, full-featured data table management system built with React, TypeScript, 
                   and Redux Toolkit. Designed for professionals who need powerful data manipulation 
-                  capabilities with an intuitive interface.
+                  capabilities with an intuitive, beautiful interface. Experience seamless data management
+                  with advanced features like real-time editing, CSV operations, and dynamic column control.
                 </p>
-                <div className="flex items-center gap-3">
-                  <span className="text-xs text-muted-foreground">Built with:</span>
-                  <div className="flex items-center gap-2">
-                    <span className="px-2 py-1 text-xs rounded bg-primary/10 text-primary font-medium">React</span>
-                    <span className="px-2 py-1 text-xs rounded bg-primary/10 text-primary font-medium">TypeScript</span>
-                    <span className="px-2 py-1 text-xs rounded bg-primary/10 text-primary font-medium">Redux</span>
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Powered by:</span>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="px-3 py-1.5 text-xs rounded-full bg-gradient-to-r from-primary/20 to-primary/10 text-primary font-bold border border-primary/20 hover:scale-105 transition-transform">React</span>
+                    <span className="px-3 py-1.5 text-xs rounded-full bg-gradient-to-r from-primary/20 to-primary/10 text-primary font-bold border border-primary/20 hover:scale-105 transition-transform">TypeScript</span>
+                    <span className="px-3 py-1.5 text-xs rounded-full bg-gradient-to-r from-primary/20 to-primary/10 text-primary font-bold border border-primary/20 hover:scale-105 transition-transform">Redux</span>
+                    <span className="px-3 py-1.5 text-xs rounded-full bg-gradient-to-r from-primary/20 to-primary/10 text-primary font-bold border border-primary/20 hover:scale-105 transition-transform">Tailwind</span>
                   </div>
                 </div>
               </div>
 
               {/* Features */}
               <div>
-                <h4 className="font-semibold text-foreground mb-3">Key Features</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="hover:text-foreground transition-colors cursor-default">Inline Editing</li>
-                  <li className="hover:text-foreground transition-colors cursor-default">CSV Import/Export</li>
-                  <li className="hover:text-foreground transition-colors cursor-default">Column Management</li>
-                  <li className="hover:text-foreground transition-colors cursor-default">Advanced Sorting</li>
-                  <li className="hover:text-foreground transition-colors cursor-default">Global Search</li>
+                <h4 className="font-bold text-lg text-foreground mb-4 flex items-center gap-2">
+                  <span className="h-1 w-8 bg-gradient-to-r from-primary to-purple-600 rounded-full"></span>
+                  Key Features
+                </h4>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="hover:text-primary transition-colors cursor-pointer hover:translate-x-1 transition-transform flex items-center gap-2">
+                    <span className="text-primary">→</span> Inline Editing
+                  </li>
+                  <li className="hover:text-primary transition-colors cursor-pointer hover:translate-x-1 transition-transform flex items-center gap-2">
+                    <span className="text-primary">→</span> CSV Import/Export
+                  </li>
+                  <li className="hover:text-primary transition-colors cursor-pointer hover:translate-x-1 transition-transform flex items-center gap-2">
+                    <span className="text-primary">→</span> Column Management
+                  </li>
+                  <li className="hover:text-primary transition-colors cursor-pointer hover:translate-x-1 transition-transform flex items-center gap-2">
+                    <span className="text-primary">→</span> Advanced Sorting
+                  </li>
+                  <li className="hover:text-primary transition-colors cursor-pointer hover:translate-x-1 transition-transform flex items-center gap-2">
+                    <span className="text-primary">→</span> Global Search
+                  </li>
                 </ul>
               </div>
 
               {/* Technologies */}
               <div>
-                <h4 className="font-semibold text-foreground mb-3">Tech Stack</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="hover:text-foreground transition-colors cursor-default">React 18.3</li>
-                  <li className="hover:text-foreground transition-colors cursor-default">Redux Toolkit 2.10</li>
-                  <li className="hover:text-foreground transition-colors cursor-default">Tailwind CSS</li>
-                  <li className="hover:text-foreground transition-colors cursor-default">PapaParse</li>
-                  <li className="hover:text-foreground transition-colors cursor-default">Vite</li>
+                <h4 className="font-bold text-lg text-foreground mb-4 flex items-center gap-2">
+                  <span className="h-1 w-8 bg-gradient-to-r from-primary to-purple-600 rounded-full"></span>
+                  Tech Stack
+                </h4>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="hover:text-primary transition-colors cursor-pointer hover:translate-x-1 transition-transform flex items-center gap-2">
+                    <span className="text-primary">→</span> React 18.3
+                  </li>
+                  <li className="hover:text-primary transition-colors cursor-pointer hover:translate-x-1 transition-transform flex items-center gap-2">
+                    <span className="text-primary">→</span> Redux Toolkit 2.10
+                  </li>
+                  <li className="hover:text-primary transition-colors cursor-pointer hover:translate-x-1 transition-transform flex items-center gap-2">
+                    <span className="text-primary">→</span> Tailwind CSS
+                  </li>
+                  <li className="hover:text-primary transition-colors cursor-pointer hover:translate-x-1 transition-transform flex items-center gap-2">
+                    <span className="text-primary">→</span> PapaParse
+                  </li>
+                  <li className="hover:text-primary transition-colors cursor-pointer hover:translate-x-1 transition-transform flex items-center gap-2">
+                    <span className="text-primary">→</span> Vite
+                  </li>
                 </ul>
               </div>
             </div>
 
             {/* Bottom Bar */}
-            <div className="mt-8 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-sm text-muted-foreground">
-                © {new Date().getFullYear()} Data Table Manager. Built with ❤️ using modern web technologies.
+            <div className="mt-10 pt-8 border-t border-border/60 flex flex-col md:flex-row justify-between items-center gap-6">
+              <p className="text-sm text-muted-foreground flex items-center gap-2">
+                © {new Date().getFullYear()} Data Table Manager. Built with 
+                <span className="text-red-500 animate-pulse">❤️</span> 
+                using modern web technologies.
               </p>
-              <div className="flex items-center gap-6 text-sm text-muted-foreground">
-                <span className="hover:text-foreground transition-colors cursor-pointer">Documentation</span>
-                <span className="hover:text-foreground transition-colors cursor-pointer">GitHub</span>
-                <span className="hover:text-foreground transition-colors cursor-pointer">Support</span>
+              <div className="flex items-center gap-6 text-sm">
+                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer font-medium">Documentation</span>
+                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer font-medium">GitHub</span>
+                <span className="text-muted-foreground hover:text-primary transition-colors cursor-pointer font-medium">Support</span>
               </div>
             </div>
           </div>

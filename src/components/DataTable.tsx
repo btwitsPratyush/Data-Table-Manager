@@ -107,14 +107,14 @@ export const DataTable = () => {
 
   return (
     <div className="w-full">
-      <div className="overflow-x-auto rounded-lg border border-border bg-card shadow-sm">
+      <div className="overflow-x-auto rounded-2xl border border-border bg-card shadow-sm dark:border-gray-700 dark:bg-gray-800/60">
         <table className="w-full border-collapse">
           <thead>
-            <tr className="border-b border-table-border bg-muted/50">
+            <tr className="border-b border-table-border bg-muted/50 dark:border-gray-700 dark:bg-gray-700/50">
               {visibleColumns.map((column) => (
                 <th
                   key={column.id}
-                  className="cursor-pointer select-none px-6 py-4 text-left text-sm font-semibold text-foreground transition-colors hover:bg-muted"
+                  className="cursor-pointer select-none px-6 py-4 text-left text-sm font-semibold text-foreground transition-colors hover:bg-muted dark:text-white dark:hover:bg-gray-600"
                   onClick={() => handleSort(column.id)}
                 >
                   <div className="flex items-center gap-2">
@@ -131,21 +131,21 @@ export const DataTable = () => {
                   </div>
                 </th>
               ))}
-              <th className="px-6 py-4 text-left text-sm font-semibold text-foreground">
+              <th className="px-6 py-4 text-left text-sm font-semibold text-foreground dark:text-white">
                 Actions
               </th>
             </tr>
           </thead>
           <tbody>
-            {paginatedData.map((row) => (
+            {paginatedData.map((row, index) => (
               <tr
                 key={row.id}
-                className="border-b border-table-border transition-colors hover:bg-table-row-hover"
+                className={`border-b border-table-border transition-colors ${index % 2 === 0 ? 'bg-white dark:bg-gray-900' : 'bg-gray-50 dark:bg-gray-800'} hover:bg-gray-100 dark:hover:bg-gray-700`}
               >
                 {visibleColumns.map((column) => (
                   <td
                     key={`${row.id}-${column.id}`}
-                    className="px-6 py-4 text-sm text-foreground"
+                    className="px-6 py-4 text-sm text-foreground dark:text-gray-300"
                     onDoubleClick={() => handleCellDoubleClick(row.id, column.id, row[column.id])}
                   >
                     {editingCell?.rowId === row.id && editingCell?.columnId === column.id ? (
@@ -160,7 +160,7 @@ export const DataTable = () => {
                             setEditingCell(null);
                           }
                         }}
-                        className="h-8"
+                        className="h-8 dark:bg-gray-700 dark:text-white dark:border-gray-600"
                         autoFocus
                       />
                     ) : (
@@ -174,7 +174,7 @@ export const DataTable = () => {
                       variant="ghost"
                       size="sm"
                       onClick={() => handleDeleteClick(row.id)}
-                      className="h-8 w-8 p-0 text-destructive hover:bg-destructive/10 hover:text-destructive"
+                      className="h-8 w-8 p-0 text-red-500 hover:bg-red-500/10 hover:text-red-600 dark:text-red-400 dark:hover:bg-red-900/20 transition-all duration-300 glow-effect-red"
                     >
                       <Trash2 className="h-4 w-4" />
                     </Button>

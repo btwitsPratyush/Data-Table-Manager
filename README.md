@@ -7,7 +7,7 @@ A modern, full-featured data table management system built with React that enabl
 ![Redux](https://img.shields.io/badge/Redux_Toolkit-2.10-purple?style=for-the-badge&logo=redux)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-## 🌟 Features:-
+## Features:-
 
 ### Core Functionality
 - **📋 Interactive Data Table**: Responsive table display with sortable columns and pagination

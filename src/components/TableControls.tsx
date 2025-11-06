@@ -30,7 +30,6 @@ export const TableControls = () => {
         </div>
         
         <div className="flex gap-2">
-          <ThemeToggle />
           
           <Button
             variant="outline"

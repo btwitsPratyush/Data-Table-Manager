@@ -25,7 +25,7 @@ export const TableControls = () => {
             placeholder="Search across all columns..."
             value={searchQuery}
             onChange={(e) => dispatch(setSearchQuery(e.target.value))}
-            className="pl-9"
+            className="pl-9 rounded-2xl bg-card/60 border-transparent focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-lg transition-all duration-300"
           />
         </div>
         
@@ -37,7 +37,7 @@ export const TableControls = () => {
             className="gap-2"
           >
             <Upload className="h-4 w-4" />
-            Import CSV
+            Import CSV  
           </Button>
           
           <CSVExport />

@@ -81,8 +81,8 @@ const Index = () => {
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl border border-border bg-gradient-to-br from-card to-accent/20 p-6 shadow-[var(--shadow-md)]">
                 <h3 className="font-bold text-xl text-foreground mb-4 flex items-center gap-3">
-                  <span className="text-3xl">💡</span> 
-                  <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">Quick Tips</span>
+                  <span className="text-3xl"></span> 
+                  <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">Quick Tips:-</span>
                 </h3>
                 <ul className="text-sm text-muted-foreground space-y-3">
                   <li className="flex items-start gap-3 group">
@@ -106,8 +106,8 @@ const Index = () => {
 
               <div className="rounded-xl border border-border bg-gradient-to-br from-card to-accent/20 p-6 shadow-[var(--shadow-md)]">
                 <h3 className="font-bold text-xl text-foreground mb-4 flex items-center gap-3">
-                  <span className="text-3xl">🚀</span> 
-                  <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">Features</span>
+                  <span className="text-3xl"></span> 
+                  <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">Features:-</span>
                 </h3>
                 <ul className="text-sm text-muted-foreground space-y-3">
                   <li className="flex items-start gap-3 group">

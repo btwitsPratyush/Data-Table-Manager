@@ -17,7 +17,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
+<<<<<<< HEAD
     --primary: 210 90% 40%; /* Changed from purple to blue */
+=======
+    --primary: 262 83% 58%;
+>>>>>>> 6c8ca7fb924c61483c348767e2ed44e61b0a09f6
     --primary-foreground: 0 0% 100%;
 
     --secondary: 240 4.8% 95.9%;
@@ -76,7 +80,11 @@ All colors MUST be HSL.
     --popover: 240 10% 6%;
     --popover-foreground: 0 0% 98%;
 
+<<<<<<< HEAD
     --primary: 210 90% 40%; /* Changed from purple to blue */
+=======
+    --primary: 262 83% 58%;
+>>>>>>> 6c8ca7fb924c61483c348767e2ed44e61b0a09f6
     --primary-foreground: 0 0% 100%;
 
     --secondary: 240 3.7% 15.9%;

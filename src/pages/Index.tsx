@@ -1,30 +1,23 @@
 import { Provider } from 'react-redux';
+
 import { store } from '@/store/store';
+
 import { DataTable } from '@/components/DataTable';
 import { TableControls } from '@/components/TableControls';
-import { Database } from 'lucide-react';
+import { TopNavBar } from '@/components/TopNavBar';
 
 const Index = () => {
   return (
     <Provider store={store}>
       <div className="min-h-screen bg-background flex flex-col">
+        <TopNavBar />
         <div className="flex-1 py-8">
           <div className="container mx-auto px-4">
             {/* Header */}
             <div className="mb-10">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="rounded-2xl bg-gradient-to-br from-primary to-primary/80 p-4 shadow-[var(--shadow-primary)]">
-                  <Database className="h-8 w-8 text-primary-foreground" />
-                </div>
-                <div>
-                  <h1 className="text-5xl font-extrabold tracking-tight bg-gradient-to-r from-primary via-primary to-purple-600 bg-clip-text text-transparent">
-                    Dynamic Data Table Manager
-                  </h1>
-                  <p className="text-xl text-muted-foreground mt-2 font-medium">
-                    A powerful, feature-rich data management solution built with modern web technologies
-                  </p>
-                </div>
-              </div>
+              <p className="text-xl text-muted-foreground mt-2 font-medium">
+                A POWERFUL, FEATURE-RICH DATA MANAGEMENT SOLUTION BUILT WITH MODERN WEB TECHNOLOGIES
+              </p>
               
               {/* Feature highlights */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
@@ -145,14 +138,9 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
               {/* About */}
               <div className="md:col-span-2">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="rounded-xl bg-gradient-to-br from-primary to-primary/80 p-3 shadow-[var(--shadow-primary)]">
-                    <Database className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                    Data Table Manager
-                  </h3>
-                </div>
+                <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent mb-4">
+                  Data Table Manager
+                </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                   A modern, full-featured data table management system built with React, TypeScript, 
                   and Redux Toolkit. Designed for professionals who need powerful data manipulation 
@@ -218,12 +206,11 @@ const Index = () => {
                 </ul>
               </div>
             </div>
-
             {/* Bottom Bar */}
             <div className="mt-10 pt-8 border-t border-border/60 flex flex-col md:flex-row justify-between items-center gap-6">
               <p className="text-sm text-muted-foreground flex items-center gap-2">
-                © {new Date().getFullYear()} Data Table Manager. Built with 
-                <span className="text-red-500 animate-pulse">❤️</span> 
+                © {new Date().getFullYear()} Data Table Manager. Built with
+                <span className="text-red-500 animate-pulse">❤️</span>
                 using modern web technologies.
               </p>
               <div className="flex items-center gap-6 text-sm">

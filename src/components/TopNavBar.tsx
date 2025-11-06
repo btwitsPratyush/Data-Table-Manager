@@ -12,7 +12,7 @@ export function TopNavBar() {
             <rect x="14" y="14" width="7" height="7" rx="1" fill="#dc2626" />
           </svg>
         </div>
-        <h1 className="text-4xl font-bold bg-gradient-to-r from-red-600 to-blue-500 bg-clip-text text-transparent" style={{ fontFamily: 'cursive' }}>
+        <h1 className="text-4xl font-bold text-blue-600" style={{ fontFamily: 'cursive' }}>
           Dynamic Data Table Manager
         </h1>
       </div>

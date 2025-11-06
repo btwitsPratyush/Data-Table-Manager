@@ -79,7 +79,7 @@ const Index = () => {
 
             {/* Info Cards */}
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl border border-border bg-gradient-to-br from-card to-accent/20 p-6 shadow-[var(--shadow-md)]">
+              <div className="rounded-xl border border-border bg-gradient-to-br from-card to-accent/20 p-6 shadow-[var(--shadow-md)] hover:border-blue-500 hover:shadow-blue-500/50 transition-all duration-300">
                 <h3 className="font-bold text-xl text-foreground mb-4 flex items-center gap-3">
                   <span className="text-3xl"></span> 
                   <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">Quick Tips:-</span>
@@ -104,7 +104,7 @@ const Index = () => {
                 </ul>
               </div>
 
-              <div className="rounded-xl border border-border bg-gradient-to-br from-card to-accent/20 p-6 shadow-[var(--shadow-md)]">
+              <div className="rounded-xl border border-border bg-gradient-to-br from-card to-accent/20 p-6 shadow-[var(--shadow-md)] hover:border-blue-500 hover:shadow-blue-500/50 transition-all duration-300">
                 <h3 className="font-bold text-xl text-foreground mb-4 flex items-center gap-3">
                   <span className="text-3xl"></span> 
                   <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">Features:-</span>
